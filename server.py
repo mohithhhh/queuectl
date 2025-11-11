@@ -3,7 +3,7 @@ from job_queue import enqueue_job, list_jobs, show_status, list_dlq, retry_dlq_j
 from worker import start_workers, stop_workers
 import threading
 
-app = Flask(__name__)
+app = Flask(__name__) 
  
 # ---------------------- JOB MANAGEMENT ----------------------
 
