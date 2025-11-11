@@ -6,3 +6,4 @@ def get(key: str, default=None):
 
 def set(key: str, value: str):
     set_config(key, value)
+     
