@@ -4,4 +4,4 @@ def list_dlq():
     _list_dlq()
 
 def retry_dlq_job(job_id: str):
-    _retry(job_id)
+    _retry(job_id) 
