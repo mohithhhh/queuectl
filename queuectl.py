@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json
+import json 
 import click
 from job_queue import (
     init_db, enqueue_job, list_jobs, show_status,
