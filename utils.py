@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-
+ 
 def ensure_data_dir() -> str:
     base = os.path.join(os.path.expanduser("~"), ".queuectl")
     os.makedirs(base, exist_ok=True)
