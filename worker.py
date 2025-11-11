@@ -1,7 +1,7 @@
 import os
 import signal
 import subprocess
-import time
+import time 
 from multiprocessing import Process
 from job_queue import (
     claim_next_job, mark_completed, mark_retry,
