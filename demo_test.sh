@@ -7,7 +7,7 @@ source .venv/bin/activate
 pip install --quiet click
 
 # Show status before
-python queuectl.py status || true
+python queuectl.py status || true 
 
 # Enqueue jobs
 python queuectl.py enqueue '{"id":"job1","command":"echo Hello"}'
