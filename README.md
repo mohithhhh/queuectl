@@ -3,25 +3,25 @@ QueueCTL is a lightweight, production-grade background job queue system built wi
 
 ## **Features Implemented**
 
-- 🧩 **Job Enqueuing** — Add background jobs via CLI or REST API  
-- ⚙️ **Worker Pool** — Run multiple workers concurrently using multiprocessing  
-- 🔁 **Automatic Retries** — Exponential backoff retry mechanism (`delay = base ^ attempts`)  
-- 💀 **Dead Letter Queue (DLQ)** — Permanently failed jobs stored for inspection and retry  
-- 🗄️ **Persistent Storage** — SQLite-backed job database that survives restarts  
-- ⏱️ **Timeout Handling** — Each job safely terminates after a configurable timeout (default 10s)  
-- 🪫 **Graceful Shutdown** — Workers complete their current job before stopping  
-- 🧮 **Configuration Management** — Modify retry count, backoff base, etc., via CLI or API  
-- 🧠 **Priority Scheduling** — Higher-priority jobs are executed first  
-- ⏰ **Scheduled Jobs (`run_at`)** — Delay or schedule jobs for future execution  
-- 🧾 **Structured Logging** — Per-job logs stored at `~/.queuectl/logs/job_<id>.txt`  
-- 🌐 **Flask REST API** — Enqueue, monitor, and control the queue remotely  
-- 📊 **Metrics Endpoint (`/metrics`)** — Provides live stats: job counts, success rate, and worker status  
-- 🧱 **Status & Monitoring** — View all job states and system health  
-- 🔐 **Concurrency Safety** — SQLite row-level locking prevents duplicate job processing  
-- 🔄 **DLQ Retry** — Resubmit failed jobs for execution via CLI or API  
-- 🧹 **Persistent Configuration** — System remembers settings across restarts  
-- 🧪 **Demo & Test Scripts** — Automated shell scripts (`demo_test.sh`) for validation  
-- 💡 **Extensible Design** — Modular architecture for easy feature additions (e.g., web dashboard)  
+-  **Job Enqueuing** — Add background jobs via CLI or REST API  
+-  **Worker Pool** — Run multiple workers concurrently using multiprocessing  
+-  **Automatic Retries** — Exponential backoff retry mechanism (`delay = base ^ attempts`)  
+-  **Dead Letter Queue (DLQ)** — Permanently failed jobs stored for inspection and retry  
+-  **Persistent Storage** — SQLite-backed job database that survives restarts  
+-  **Timeout Handling** — Each job safely terminates after a configurable timeout (default 10s)  
+-  **Graceful Shutdown** — Workers complete their current job before stopping  
+-  **Configuration Management** — Modify retry count, backoff base, etc., via CLI or API  
+-  **Priority Scheduling** — Higher-priority jobs are executed first  
+-  **Scheduled Jobs (`run_at`)** — Delay or schedule jobs for future execution  
+-  **Structured Logging** — Per-job logs stored at `~/.queuectl/logs/job_<id>.txt`  
+-  **Flask REST API** — Enqueue, monitor, and control the queue remotely  
+-  **Metrics Endpoint (`/metrics`)** — Provides live stats: job counts, success rate, and worker status  
+-  **Status & Monitoring** — View all job states and system health  
+-  **Concurrency Safety** — SQLite row-level locking prevents duplicate job processing  
+-  **DLQ Retry** — Resubmit failed jobs for execution via CLI or API  
+-  **Persistent Configuration** — System remembers settings across restarts  
+-  **Demo & Test Scripts** — Automated shell scripts (`demo_test.sh`) for validation  
+-  **Extensible Design** — Modular architecture for easy feature additions (e.g., web dashboard)  
 
 ## 1. Setup instructions
 Tech Stack Used = ```Python3, Flask, Click and SQLite```
